@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <title>Single Page Website</title>
     <style>
+        /* hace que el menu se quede fijo y puedas navegar entre secciones mas facilmente*/
+        #mast{
+            width: 100%;
+            background-color: #ddd;
+            height: 50px;
+            margin-top: 20px;
+            position: fixed;
+
+        }
+        #nav{
+            margin-top: 10px;
+            width: 600px;
+            float: right;
+        }
+        /*Termina para dejar fijo el menu*/
         section{
             border: 1px solid #dddddd;
             min-height: 500px;
@@ -23,7 +38,7 @@
         }
         #nav li{
             float: left;
-            padding: 10px;
+            padding: 5px;
             max-resolution: 2px;
             border: 1px solid black;
             background: black ;
@@ -40,12 +55,18 @@
         clear{
             clear: both;
         }
+
+        #section1{
+            background: url('https://i.imgur.com/UYrUeZV.jpg/100x100');
+            backgroung-size: cover;
+
+        }
     </style>
 </head>
 <body>
     <!HEADER BEGINS->
     <div class="container">
-    <header>
+    <header id="mast">
         <div>
             <nav id="nav">
                 <ul>
